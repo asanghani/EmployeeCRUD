@@ -20,11 +20,13 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.wfb.csts.emp.model.Carmodel;
 import com.wfb.csts.emp.model.Employeemodel;
-import com.wfb.csts.emp.service.Createemployeeservice;
 import com.wfb.csts.emp.service.Reademployeeservice;
-import com.wfb.csts.emp.validator.CarValidator;
 
-//hi this is test
+
+
+
+
+
 
 @Controller
 public class Commonemployeecontroller {
@@ -36,7 +38,7 @@ public class Commonemployeecontroller {
 		this.reademployeeservice = reademployeeservice;
 	}
 	
-	
+	//welcome file
 	@RequestMapping("/welcome")
 	public String printWelcome(ModelMap model) {
 		return "welcome";
