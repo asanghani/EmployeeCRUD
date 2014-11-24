@@ -12,7 +12,7 @@ import com.wfb.csts.emp.model.Employeemodel;
 import com.wfb.csts.emp.service.Deleteemployeeservice;
 @Controller
 public class Deleteemployeecontroller {
-	
+	//test
 	public Deleteemployeeservice deleteemployeeservice;
 
 	public void setDeleteemployeeservice(Deleteemployeeservice deleteemployeeservice) {
