@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 import com.wfb.csts.emp.model.Employeemodel;
 
-
+//test
 
 public class Deleteemployeedao implements IDeleteemployeeDAO {
 	private static final String PERSISTENCE_UNIT_NAME = "employeemodel";
