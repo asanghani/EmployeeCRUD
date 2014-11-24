@@ -18,7 +18,7 @@ import com.wfb.csts.emp.service.Reademployeeservice;
 
 @Controller
 public class Reademployeecontroller {
-	
+	// go go go
 	
 	@RequestMapping(value = "/GetForm.do", method = RequestMethod.GET)
 	public ModelAndView getform(){

@@ -14,7 +14,7 @@ import com.wfb.csts.emp.service.Deleteemployeeservice;
 public class Deleteemployeecontroller {
 	
 	public Deleteemployeeservice deleteemployeeservice;
-	//test
+
 	public void setDeleteemployeeservice(Deleteemployeeservice deleteemployeeservice) {
 		this.deleteemployeeservice = deleteemployeeservice;
 	}
