@@ -38,7 +38,6 @@ public class Commonemployeecontroller {
 		this.reademployeeservice = reademployeeservice;
 	}
 	
-	//welcome file
 	@RequestMapping("/welcome")
 	public String printWelcome(ModelMap model) {
 		return "welcome";
