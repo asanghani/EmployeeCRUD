@@ -49,7 +49,7 @@
 			</div>
 			
 			<div id="rightmenupanel_area" >
-			   <%@include file="/view/template/sidemenubar.jsp" %> 
+			   <%@include file="/view/template/right_sidemenubar.jsp" %> 
 			</div>
 		</div>	
 			

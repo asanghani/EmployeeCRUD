@@ -44,7 +44,7 @@ body
 	width: 605px;
 	/*border: 2px solid black;*/
 	float: left;
-	height: 500px;
+	height: 1000px;
 }
 #rightmenupanel_area {
 	width: 189px;
@@ -87,3 +87,20 @@ body
 .fildset_style1 label{float: left;width: 100px;}
 .error {color: #ff0000;}
 .errorblock{color: #000;background-color: #ffEEEE;border: 3px solid #ff0000;padding:8px;margin:16px;}
+/*-------------------------------------------------- listemp2-view-----------------------------------*/
+#emp_listbox{width: 300px;}
+			#emp_listbox select{width: 300px;height: 30px;}
+			
+			#emp_table{width: 900px;}
+			#emp_table table{border:1px solid black;border-collapse: collapse;} 
+			th,td{border: 1px solid black;padding: 5px;}
+			tr:nth-child(2n){background-color: gray;}
+/*-------------------------------------------------- ajax-view-----------------------------------*/			
+#emp_listbox{width: 300px;}
+#emp_listbox select{width: 300px;height: 30px;}			
+#emp_table{width: 900px;}
+#emp_table table{border:1px solid black;border-collapse: collapse;} 
+th,td{border: 1px solid black;padding: 5px;}
+tr:nth-child(2n){background-color: gray;}
+thead{background-color:white;}		
+thead{background-color:white;}

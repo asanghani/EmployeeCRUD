@@ -21,7 +21,7 @@
 <!-- topnav_area       -->		<div id="topnav_area">          <%@include file="/view/template/menubar.jsp" %>     </div>
 <!-- leftpanel_area    -->		<div id="leftmenupanel_area" >  <%@include file="/view/template/sidemenubar.jsp" %> </div>
 <!-- contentpanel_area -->		<div id="containt_area" >       containt_area  </div>
-<!-- rightpanel_area   -->		<div id="rightmenupanel_area" > <%@include file="/view/template/sidemenubar.jsp" %> </div>
+<!-- rightpanel_area   -->		<div id="rightmenupanel_area" > <%@include file="/view/template/right_sidemenubar.jsp" %> </div>
 							</div>	
 <!-- footer_area       -->	    <div id="footer_area" >         Footer         </div>		  
 					   </body>
