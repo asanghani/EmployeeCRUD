@@ -1,66 +1,69 @@
+/*
 body
     {
-    margin:0px;
+    margin:0px 5px 0px 5px;
+    border: 5px solid #000000;
    
-    }
+    }*/
+
 #page_area {
 	box-sizing: border-box;              
     overflow: hidden;                           /* veryimportant */
-  /*  /*  padding: 7%; */  */                         /* veryimportant */
-    border: 1px solid blue;
+   /*  padding: 7%; */                          /* veryimportant */
+    border: 5px solid #000000;
     margin: 0px auto 0px auto;
-    width: 790px;
+    width: 993px;
+  
 }
 #logo_area {
 	width: 50px;
 	height: 50px;
-	border: 1px dotted  red;
+	border: 2px solid  red;
 	float: left;
 }
 
 #banner_area {
-	/* width: 100%; */
+
 	height: 50px;
-	border: 1px dotted  blue;
-	clear:right;
+	border: 2px solid  blue;
+	float: left;
 	
 }
 
 #topnav_area {
-	/* width: 100%; */
-	height: 70px;
-	border: 2px dotted  black;
+	width: auto; 
+	height: auto;
+	border: 2px solid  #FF0000;
 	clear: both;
 	
 }
 
 #leftmenupanel_area {
-	width: 10%;
-	height: 100%;
+	width: 180px;
 	border: 1px dotted  orange;
 	float: left;
 	
 }
 
 #containt_area {
-	width: 79%;
-	height: 100%;
-	border: 1px dotted  pink;
+	width: 605px;
+	border: 2px solid black;
 	float: left;
-	
+	height: 500px;
 }
 #rightmenupanel_area {
-	width: 10%;
+	width: 189px;
 	height: 100%;
 	border: 1px dotted  orange;
-	float: right;
+	float: left;
 	
 }
 #footer_area {
 	
+	width: 993px;
 	height: 35px;
-	border: 1px dotted  black;
-	margin-left:2px;
+	border: 1px solid  black;
+	margin: 0 auto 0 auto;
 	bottom:0;
 }
 

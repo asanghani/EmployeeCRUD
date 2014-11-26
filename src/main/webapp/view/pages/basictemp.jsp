@@ -34,14 +34,12 @@
 			</div>
 			
 			
-			<div id="topnav_area" >
-			<%-- <%@include file="/view/template/menubar.jsp" %> --%>
-			 
-			    
+		 	<div id="topnav_area" >
+			   <%@include file="/view/template/menubar.jsp" %> 
 			</div>
 			
 			<div id="leftmenupanel_area" >
-			leftpanel
+			   <%@include file="/view/template/sidemenubar.jsp" %> 
 			 
 			</div>
 			
@@ -51,12 +49,7 @@
 			</div>
 			
 			<div id="rightmenupanel_area" >
-			A high-level programming language developed by Sun Microsystems. Java was originally called OAK,
-		    and was designed for handheld devices and set-top boxes. Oak was unsuccessful so in 1995 Sun changed the name to Java and 
-			modified the language to take advantage of the burgeoning World Wide Web.
-			A high-level programming language developed by Sun Microsystems. Java was originally called OAK,
-		    and was designed for handheld devices and set-top boxes. Oak was unsuccessful so in 1995 Sun changed the name to Java and 
-			modified the language to take advantage of the burgeoning World Wide Web.
+			   <%@include file="/view/template/sidemenubar.jsp" %> 
 			</div>
 		</div>	
 			

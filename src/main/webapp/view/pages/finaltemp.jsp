@@ -11,7 +11,7 @@
 							<link href="<c:url value="/resources/css/jquery-ui.theme.min.css" />" rel="stylesheet">
 							<script src="<c:url value="/resources/js/jquery-2.1.1.min.js" />"></script>
 							<script src="<c:url value="/resources/js/jquery-ui.min.js" />"></script>
-<!-- Page-Stylesheet   -->	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+<!-- Page-Stylesheet   -->	<link href="<c:url value="/resources/css/basicstyle.css" />" rel="stylesheet">
 					   </head>
 					   
 					   <body>
@@ -20,39 +20,9 @@
 <!-- banner_area       -->		<div id="banner_area">          banner         </div>
 <!-- topnav_area       -->		<div id="topnav_area">          <%@include file="/view/template/menubar.jsp" %>     </div>
 <!-- leftpanel_area    -->		<div id="leftmenupanel_area" >  <%@include file="/view/template/sidemenubar.jsp" %> </div>
-<!-- contentpanel_area -->		
-<div id="containt_area" >      
-     <form:form method="POST" action="createcar.do" commandName="cmodel">   
-		 <fieldset class="fildset_style1">    
- 			<legend>Car Information:</legend>
- 			<p>
-		       <form:label path="carid">CarID</form:label>
-		       <form:input path="carid" id="carid" />
-		       <form:errors path="carid" cssClass="error" />
-		    </p><p>    
-		       <form:label path="eid">EId</form:label>
-		       <form:input path="eid" id="eid" />
-		       <form:errors path="eid" cssClass="error" />
-		    </p><p>		
-		   	   <form:label path="manufacturer">Manufacturer</form:label>
-		       <form:input path="manufacturer" />
-		       <form:errors path="manufacturer" cssClass="error" />
-		    </p><p>	
-		       <form:label path="carnumber">CarNumber</form:label>
-		       <form:input path="carnumber" />
-		       <form:errors path="carnumber" cssClass="error" />
-		    </p><p>	   
-		       <form:label path="car_model">Carmodel</form:label>
-		       <form:input path="car_model" />
-		       <form:errors path="car_model" cssClass="error" />
-		    </p><p>		 
-		       <input type="submit" value="Submit"/>
-		    </p>     
-		  </fieldset>
-	  </form:form>
- </div>
+<!-- contentpanel_area -->		<div id="containt_area" >       containt_area  </div>
 <!-- rightpanel_area   -->		<div id="rightmenupanel_area" > <%@include file="/view/template/sidemenubar.jsp" %> </div>
-</div>	<!-- mainpage-end -->
+							</div>	
 <!-- footer_area       -->	    <div id="footer_area" >         Footer         </div>		  
-</body>
+					   </body>
 </html>

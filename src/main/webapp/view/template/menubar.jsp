@@ -18,11 +18,10 @@
 		<li><a href="${pageContext.request.contextPath}/GetForm.do">Find Employee</a></li>
 		<li><a href="${pageContext.request.contextPath}/DeleteForm.do">Delete Employee</a></li>
 		<li><a href="${pageContext.request.contextPath}/UpdateForm.do">Update Employee</a></li>
-		<li><a href="${pageContext.request.contextPath}/ajaxformrequest.do">AJAX/JSript/Jquery</a></li>
-		<li><a href="${pageContext.request.contextPath}/view/pages/component.jsp">TestComponent</a></li>
-		<li><a href="${pageContext.request.contextPath}/view/pages/basictemp.jsp">BasicTemplate</a></li>
-		<li><a href="${pageContext.request.contextPath}/LoadForm.do">load</a></li>
-	</ul>	
+		
+	</ul>
+	
+	
 </body>
 
 
