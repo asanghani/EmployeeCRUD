@@ -6,7 +6,7 @@
 <!-- Page-Stylesheet-->	  <link href="<c:url value="/resources/css/menu-sidemenu.css" />" rel="stylesheet">
 					   </head>
 						<body>
-							<div id="sidemenu" style="float: left;">
+							<div id="sidemenu" style="float: right;">
 							   <ul>       
 								  <li><a id="current" href="#">Home</a></li>
 								  <li><a href="${pageContext.request.contextPath}/ajaxformrequest.do">Jquery-1</a></li>
