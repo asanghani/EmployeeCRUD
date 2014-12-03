@@ -97,6 +97,21 @@ public class Commonemployeecontroller {
 		modelAndView = new ModelAndView("ajax-form-fill","model", modelobj);
 		return modelAndView;
 	}
+	@RequestMapping(value = "/radio-table-ajx.do", method = RequestMethod.GET)
+	public ModelAndView radioform(@ModelAttribute("cmodel") Carmodel cmodel, @ModelAttribute("emodel") Employeemodel emodel,BindingResult result,Model model, SessionStatus status){
+
+		ModelAndView modelAndView;
+		List<Employeemodel> emp1 = null;
+		List<Carmodel> carlist = null;
+		emp1 = reademployeeservice.listemp();
+		carlist = reademployeeservice.listofcar();
+		
+		Map<String, Object> modelobj = new HashMap<String, Object>();
+        modelobj.put("emp1", emp1);
+        modelobj.put("carlist", carlist);
 	
+		modelAndView = new ModelAndView("radio-table-ajx","model", modelobj);
+		return modelAndView;
+	}
 	
 }
