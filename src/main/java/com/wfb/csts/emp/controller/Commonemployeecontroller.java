@@ -22,10 +22,6 @@ import com.wfb.csts.emp.model.Carmodel;
 import com.wfb.csts.emp.model.Employeemodel;
 import com.wfb.csts.emp.service.Reademployeeservice;
 
-//hi
-
-
-
 @Controller
 public class Commonemployeecontroller {
 	
@@ -42,12 +38,6 @@ public class Commonemployeecontroller {
  
 	}
 	
-	/*@RequestMapping(value = "/LoadForm.do", method = RequestMethod.GET)
-	public ModelAndView addform(){
-		 emp_list = reademployeeservice.listemp();
-	     return new ModelAndView("load", "emodel", new Employeemodel()).addObject("emp_list", emp_list);
-	}*/
-    
 	@RequestMapping(value = "/LoadForm.do", method = RequestMethod.GET)
 	public ModelAndView create(@Valid @ModelAttribute("emodel") Employeemodel emodel,BindingResult result, Model model, SessionStatus status){
 		ModelAndView modelAndView;
@@ -75,24 +65,13 @@ public class Commonemployeecontroller {
 		return modelAndView;
 	}
 	
-	//ajax call
+	//-----------------------------------------------------------------ajax call
 	@RequestMapping(value = "/ajaxupdate", method = RequestMethod.GET)
 	public @ResponseBody Employeemodel ajaxupdate(@RequestParam("empid") Integer id){
 		System.out.println(id);
 		
 		return reademployeeservice.getEmployee(id);	
 	}
-	
-	/*@RequestMapping(value="/availability", method=RequestMethod.GET)
-	public @ResponseBody AvailabilityStatus getAvailability(@RequestParam String name) {
-	    for (Account a : accounts.values()) {
-	        if (a.getName().equals(name)) {
-	            return AvailabilityStatus.notAvailable(name);
-	        }
-	    }
-	    return AvailabilityStatus.available();
-	}*/
-	
 	
 	
 	@RequestMapping(value = "/ajaxform.do", method = RequestMethod.GET)
@@ -101,20 +80,23 @@ public class Commonemployeecontroller {
 	     return new ModelAndView("ajax", "cmodel", new Carmodel());
 	}
 	
-	/*@RequestMapping(value = "/createcar.do", method = RequestMethod.POST)
-	public ModelAndView createcar(@Valid @ModelAttribute("cmodel") Carmodel cmodel,BindingResult result,Model model){
-		CarValidator carvalidator = new CarValidator();
-		 carvalidator.validate(cmodel,result);
-		 
-		 if (result.hasErrors()){
-			 return new ModelAndView("addcar","cmodel",cmodel);
-	        }
-	    
-	        	Carmodel emp1 = createemployeeservice.writecar(cmodel);
-	        	 return new ModelAndView("addcar");
-	      //  	 return new ModelAndView("home","emp1",emp1); other way to return view with object.
-			
-	}*/
+	//----------------------------------------------Ajax-form-fill----------------------------------------------------------------
+	@RequestMapping(value = "/Ajaxformfill.do", method = RequestMethod.GET)
+	public ModelAndView ajaxform(@Valid @ModelAttribute("emodel") Employeemodel emodel,BindingResult result,Model model, SessionStatus status){
 
-
+		ModelAndView modelAndView;
+		List<Employeemodel> emp1 = null;
+		List<Carmodel> carlist = null;
+		emp1 = reademployeeservice.listemp();
+		carlist = reademployeeservice.listofcar();
+		
+		Map<String, Object> modelobj = new HashMap<String, Object>();
+        modelobj.put("emp1", emp1);
+        modelobj.put("carlist", carlist);
+	
+		modelAndView = new ModelAndView("ajax-form-fill","model", modelobj);
+		return modelAndView;
+	}
+	
+	
 }
