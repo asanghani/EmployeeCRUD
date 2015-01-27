@@ -1,6 +1,4 @@
 package com.wfb.csts.emp.model;
-
-
 import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,19 +9,20 @@ import javax.persistence.Table;
 @Table(name = "employeemodel") 
 public class Employeemodel {
 	
-	public Integer EId;
-	public String FirstName;
-	public String MiddleName;
-	public String LastName;
-	public String Age;
-	public String Phone;
-	public String Address;
+	@Id
+	private Integer EId;
+	private String FirstName;
+	private String MiddleName;
+	private String LastName;
+	private String Age;
+	private String Phone;
+	private String Address;
 	
 	
 	
-	public Employeemodel() {
+	/*public Employeemodel() {
 		
-	}
+	}*/
 	/*public Model(String eId, String firstName, String middleName,
 			String lastName, String age, String phone, String address) {
 		
@@ -35,7 +34,7 @@ public class Employeemodel {
 		Phone = phone;
 		Address = address;
 	}*/
-	@Id
+	
 	public Integer getEId() {
 		return EId;
 	}

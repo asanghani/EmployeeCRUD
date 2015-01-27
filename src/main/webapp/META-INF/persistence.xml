@@ -9,7 +9,7 @@
     
     <properties>
       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
-      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:VTM" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:system" />
       <property name="javax.persistence.jdbc.user" value="system" />
       <property name="javax.persistence.jdbc.password" value="System11" />
 	<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect"/>
@@ -30,7 +30,7 @@
     
     <properties>
       <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
-      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:VTM" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:system" />
       <property name="javax.persistence.jdbc.user" value="system" />
       <property name="javax.persistence.jdbc.password" value="System11" />
 	<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect"/>

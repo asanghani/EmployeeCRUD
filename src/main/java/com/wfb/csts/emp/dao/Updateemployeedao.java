@@ -15,7 +15,7 @@ public class Updateemployeedao implements IUpdateemployeeDAO {
 		factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
 	    EntityManager em = factory.createEntityManager();												
 	    em.getTransaction().begin();
-	    Employeemodel emodel = em.find(Employeemodel.class, Employee.EId);
+	   Employeemodel emodel = em.find(Employeemodel.class, Employee.getEId());
 	    em.remove(emodel);
 	    em.persist(Employee);
 	    em.getTransaction().commit();
